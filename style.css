@@ -70,6 +70,10 @@ body {
     display: inline;
   }
 
+  .filter{
+    pointer-events: none;
+  }
+
   /* .languages a:hover{
     background-color: #9aa1df;
   } */

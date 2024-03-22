@@ -20,24 +20,25 @@ function setLanguage(language) {
     document.getElementById('content').innerText = translations[language]['content'];
 }
 
-function swithcLang(lang) {
+function switchLang(lang) {
+    console.log("Switching language to: ", lang);
     for (let key in translations[lang]) {
-       document.getElementById(key).innerHTML = languageContent[lang][key];
+       document.getElementById(key).innerHTML = translations[lang][key];
     }
  }
 
 // Add event listeners to language links
 document.getElementById('danish').addEventListener('click', function(e) {
     e.preventDefault(); // Prevent default anchor behavior
-    swithcLang('danish');
+    switchLang('danish');
 });
 
 document.getElementById('english').addEventListener('click', function(e) {
     e.preventDefault(); // Prevent default anchor behavior
-    swithcLang('english');
+    switchLang('english');
 });
 
 document.getElementById('hungarian').addEventListener('click', function(e) {
     e.preventDefault(); // Prevent default anchor behavior
-    swithcLang('hungarian');
+    switchLang('hungarian');
 });
