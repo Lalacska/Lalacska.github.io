@@ -85,13 +85,14 @@ body {
   width: 70%;
   margin: 40px auto;
   display: block;
+  font-size: 24px;
 }
 
 #about {
   display: block;
   text-align: left;
   letter-spacing: normal;
-  padding: 20px 20px 100px 60px;
+  padding: 20px 20px 50px 60px;
 }
 
 #about, #abilities h1 {
@@ -99,7 +100,7 @@ body {
 }
 
 #about article {
-  width: 45%;
+  width: 60%;
   display: block;
 }
 
@@ -112,8 +113,25 @@ body {
 
 #education,
 #experience {
-  text-align: center;
-  padding: 50px;
+  width: 40%;
+  margin: 40px auto;
+  text-align: left;
+}
+
+#education p,
+#experience p{
+  padding-top: 30px;
+  text-align: left;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 1320px) {
+  #education,
+  #experience {
+    width: 60%;
+    margin: 40px auto;
+    text-align: left;
+  }
 }
 
 .section-with-star {
@@ -131,22 +149,28 @@ body {
   display: flex;
 }
 
+.justify-between{
+  justify-content: space-between;
+}
+
 dt {
-  margin-bottom: 10px;
+  margin-top: 10px;
 }
 
 dd{
-  margin-right: 10px;
+  margin-top: 10px;
 }
 
 #coding{
   float: left;
   width: 50%;
-  margin: 10px;
+  padding: 20px;
 }
 
 #others{
-  margin: 10px;
+  float: right;
+  width: 50%;
+  padding: 20px;
 }
 
 .stars {
@@ -154,6 +178,30 @@ dd{
   height: 20px;
 }
 
+@media screen and (max-width: 570px) {
+  .stars {
+    width: 15px;
+    height: 15px;
+  }
+}
+
+.image-list:hover dt{
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.image-list:hover .blackstar,
+.image-list .yellowstar {
+    display: none;
+}
+
+.image-list:hover .yellowstar {
+    display: inline;
+}
+
+#projects{
+  clear: both;
+}
 
 
 /* Waves */
