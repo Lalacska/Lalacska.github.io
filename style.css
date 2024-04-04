@@ -71,13 +71,28 @@ body {
   display: inline;
 }
 
-.filter {
-  pointer-events: none;
+.header .languages a{
+  font-size: 14px;
+  padding: 5px;
 }
 
-/* .languages a:hover{
-    background-color: #9aa1df;
-  } */
+.filter{
+  pointer-events: none;
+  display: inline-block; 
+  width: 0; 
+  height: 55px; 
+  border-left: 1px solid black; 
+  border-radius: 0px !important;
+  padding: 0 !important;
+}
+
+.flag{
+  float: right;
+  display: inline;
+  width: 30px;
+  height: 20px;
+}
+
 
 /* Main */
 #aboutMe,
@@ -137,12 +152,8 @@ body {
 .section-with-star {
   background-color: #dce3f2;
   border: 2px solid #cccccc;
-  /* Colored border */
   padding: 20px;
-  /* Adjust as needed */
   border-radius: 15px;
-  /* Rounded corners */
-  /* Add other styles for your section */
 }
 
 .image-list {
@@ -199,12 +210,51 @@ dd{
     display: inline;
 }
 
+/* Projects */
+
 #projects{
+  margin: 5%;
   clear: both;
+  display: flex;
+
+}
+
+.project{
+  width: 35%;
+  text-align: center;
+  background-color: #a6c1ee;
+  border: 2px solid whitesmoke;
+  border-radius: 25px;
+  margin: 20px 10px;
+}
+
+.project article,
+.project img{
+  margin: 20px auto;
+}
+
+.project a{
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.project a:hover{
+  color: rgb(122, 112, 122) !important;
+  font-weight: 500;
+}
+
+.project a:visited{
+  color: black;
+  font-weight: bold;
+
 }
 
 
+
+
 /* Waves */
+
 .custom-shape-divider-bottom-1711013119 {
   /* position: absolute; */
   bottom: 100px;
@@ -259,6 +309,12 @@ dd{
   text-decoration: none;
 }
 
-.footer a:hover {
-  color: #a6c1ee;
+.footer a#Flags{
+  color: black !important;
+  font-weight: bold;
+}
+
+.footer a:hover,
+.footer a#Flags:hover{
+  color: #a6c1ee !important;
 }
