@@ -62,3 +62,7 @@ document.getElementById("Inspiration").addEventListener("click", function () {
 document.getElementById("TicketToRide").addEventListener("click", function () {
     window.open("https://github.com/Lalacska/Ticket-to-Ride", "_blank");
 });
+
+document.getElementById("AndroidToDoList").addEventListener("click", function () {
+    window.open("https://github.com/Lalacska/ToDo_list_Android_Studio", "_blank");
+});

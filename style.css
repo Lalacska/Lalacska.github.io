@@ -226,11 +226,22 @@ dd{
   border: 2px solid whitesmoke;
   border-radius: 25px;
   margin: 20px 10px;
+  padding-bottom: 10px;
 }
 
-.project article,
+.project article{
+  margin: 20px 10px;
+}
+
+.project_image{
+  margin: 0px auto;
+  padding: 0 20px;
+}
+
 .project img{
-  margin: 20px auto;
+  margin: 30px auto;
+  max-width: 100%;
+  border: 2px bisque solid; border-radius: 10px;
 }
 
 .project a{
@@ -250,7 +261,14 @@ dd{
 
 }
 
-
+@media screen and (max-width: 1910px) {
+  #Android_img1{
+    margin-bottom: 0;
+  }
+  #Android_img2{
+    margin-top: 0;
+  }
+}
 
 
 /* Waves */
