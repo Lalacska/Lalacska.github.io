@@ -149,6 +149,18 @@ body {
   }
 }
 
+/* Abilities */
+
+#abilities section{
+  width: 60%;
+  text-align: center;
+  margin: 0px auto;
+  color:rgb(92, 92, 92);
+  font-size: 24px;
+  font-style: italic;
+  font-weight: bold;
+}
+
 .section-with-star {
   background-color: #dce3f2;
   border: 2px solid #cccccc;
@@ -212,11 +224,19 @@ dd{
 
 /* Projects */
 
+#project-panel{
+  clear: both;
+}
+#project-panel h1{
+  text-align: center;
+  font-size: 48px;
+}
+
 #projects{
-  margin: 5%;
   clear: both;
   display: flex;
-
+  justify-content: center;
+  width: 100%;
 }
 
 .project{
@@ -269,6 +289,93 @@ dd{
     margin-top: 0;
   }
 }
+
+
+/* Kontakt */
+#contact h1{
+  text-align: center;
+  font-size: 48px;
+}
+
+#name-margin {
+  margin-right: 2%;
+}
+
+#contact-box {
+  margin: 50px auto 20px auto;
+  text-align: center;
+  width: 60%;
+}
+
+.writeplace {
+  background-color: #7798d1;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 5px;
+  padding: 15px 20px;
+  color: white;
+  width: 100%;
+}
+
+.position {
+  position: relative;
+  float: left;
+  text-align: center;
+  margin: 0 auto 20px auto;
+  width: 49%;
+
+}
+
+#position-text-area {
+  position: relative;
+  clear: left;
+  margin: 20px auto;
+  text-align: center;
+  width: 60%;
+}
+
+
+::placeholder {
+  color: white;
+}
+
+textarea:valid~#text,
+#namearea:valid~#name,
+#emailarea:focus~#email,
+#emailarea:valid~#email {
+  display: none;
+}
+
+textarea {
+  background-color: #7798d1;
+  width: 100%;
+  padding: 20px 10px 200px 20px;
+  font-family: sans-serif;
+  border: none;
+  border-radius: 5px;
+  resize: vertical;
+  box-sizing: border-box;
+  color: white;
+}
+
+#button {
+  background-color: #2ec5eb;
+  color: white;
+  font-weight: bold;
+  padding: 20px 50px;
+  border-radius: 3px;
+  cursor: pointer;
+  margin: 40px auto 60px auto;
+  text-align: center;
+  display: block;
+  text-transform: uppercase;
+  box-sizing: border-box;
+  border-bottom: 4px solid #25a0be;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
 
 
 /* Waves */
